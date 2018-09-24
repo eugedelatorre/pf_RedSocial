@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(177, 221, 237);
+	margin: auto;
+}
+
+h1{
+	font-family: 'Bad Script', cursive;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
