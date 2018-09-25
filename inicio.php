@@ -22,14 +22,14 @@ $userName = "";
    </head>
    <body>
 
-    
+    <header>
       <div class="logoTitle">
         <a class="logoTitle"href="inicio.php">
           <img src="images/logo.png" alt="Felicitrip Logo" class="mainLogo">
           <h1 class="mainTitle"><?php echo $mainTitle ?></h1>
         </a>
       </div>
-
+    </header>
 
     <div class="contenedor-principal">
       <article class="info">
@@ -38,58 +38,26 @@ $userName = "";
         <img src="" alt="imagen ciudad">
       </article>
       <article class="formulario">
-        <form class="registro" action="" method="post" enctype="multipart/form-data">
-          <h2>Crea tu cuenta</h2>
-          <p>Conectate con otr@s viajer@s para vivir nuevas experiencias sin fronteras.</p>
-          <div class="fullname">
-            <input type="text" placeholder="Nombre" name="nombre" value="<?php echo $nombre ?>">
-
-            <input type="text" placeholder="Apellido" name="apellido" value="<?php echo $apellido ?>">
-
-          </div>
-
+        <form class="login" action="" method="post" enctype="multipart/form-data">
+          <h2>Ingresa a tu cuenta</h2>
 
           <input type="email" placeholder="Email" name="email" value="<?php echo $email ?>">
 
-
-
-          <select class="paisUsuario" name="paisUsuario">
-            <option value=0>País de nacimiento</option>
-            <option value=1>Argentina</option>
-            <option value=2>brasil</option>
-          </select>
-
-
-
+          <!--
           <input type="text" placeholder="Nombre de usuario" name="userName" value="<?php echo $userName ?>">
-          <br>
+          <br> -->
 
+          <input type="password" placeholder="Contraseña" name="password">
 
-          <div class="upload">
+          <button type="submit" name="">Ingresar</button>
 
-            <label class="labelAvatar" for="avatar">Sube tu avatar</label>
-            <input type="file" id="avatar" name="foto">
-
-          </div>
-
-
-          <input type="password" placeholder="Ingresa tu contraseña" name="password">
-
-
-          <input type="password" placeholder="Repite tu contraseña" name="repeatPassword">
-
-          <button type="submit" name="">Registrate</button>
-
+         <a href="#">¿Has olvidado la contraseña?</a>
 
         </form>
       </article>
-
-      <article class="user">
-        <p>¿Tienes una cuenta? <a href="inicio.php">Entrar</a></p>
+      <article class="newUser">
+        <p>¿Nuev@ viajer@? <a href="registro.php">Registrate</a></p>
       </article>
-
-
-
 
     </div>
 

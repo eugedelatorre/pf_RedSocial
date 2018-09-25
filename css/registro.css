@@ -1,17 +1,16 @@
-header{
-  display: flex;
-  width: 100%;
-  padding: 5px;
-}
-
 .logoTitle{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.logoTitle a{
+  text-decoration: none;
+  color: #000;
+}
+
 .mainLogo{
-  width: 13%;
+  width: 50px;
 }
 
 .contenedor-principal{
@@ -35,24 +34,29 @@ header{
   margin-bottom: 10px;
 }
 
-.registro{
+.registro, .login, .newUser, .user{
   text-align: center;
 }
 
-.registro h2, .registro p{
+.registro h2, .registro p, .login h2, .login p, .newUser p, .user p{
   margin-top: 3px;
   margin-bottom: 3px;
 }
 
-.formulario {
+.formulario, .newUser, .user{
+  margin: 4px;
   width: 70%;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 5px;
 }
 
-.formulario p{
+.formulario p, .newUser p, .user p{
   font-size: 12px;
+}
+
+.login a{
+  font-size: 10px;
 }
 
 input, .paisUsuario, .labelAvatar {
