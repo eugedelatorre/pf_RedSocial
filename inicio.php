@@ -55,7 +55,7 @@ $userName = "";
 
         </form>
       </article>
-      <article class="newUser">
+      <article class="etiqueta">
         <p>¿Nuev@ viajer@? <a href="registro.php">Registrate</a></p>
       </article>
 

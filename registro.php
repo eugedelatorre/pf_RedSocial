@@ -1,14 +1,6 @@
 <?php
-$title = "Felicitrip - para el viajero que hay en vos";
-$mainTitle = "Felicitrip";
-$nombre = "";
-$apellido = "";
-$email = "";
-$userName = "";
-
-
+include("config.php");
  ?>
-
 
 
  <!DOCTYPE html>
@@ -22,10 +14,10 @@ $userName = "";
    </head>
    <body>
 
-    
+
       <div class="logoTitle">
         <a class="logoTitle"href="inicio.php">
-          <img src="images/logo.png" alt="Felicitrip Logo" class="mainLogo">
+          <img src= <?php echo $logo ?> alt="Felicitrip Logo" class="mainLogo">
           <h1 class="mainTitle"><?php echo $mainTitle ?></h1>
         </a>
       </div>
@@ -43,25 +35,24 @@ $userName = "";
           <p>Conectate con otr@s viajer@s para vivir nuevas experiencias sin fronteras.</p>
           <div class="fullname">
             <input type="text" placeholder="Nombre" name="nombre" value="<?php echo $nombre ?>">
-
+              <span><?php echo $errorNombre; ?></span>
             <input type="text" placeholder="Apellido" name="apellido" value="<?php echo $apellido ?>">
-
+              <span><?php echo $errorApellido; ?></span>
           </div>
 
-
-          <input type="email" placeholder="Email" name="email" value="<?php echo $email ?>">
-
-
-
+          <input type="text" placeholder="Email" name="email" value="<?php echo $email ?>">
+            <span><?php echo $errorEmail; ?></span>
           <select class="paisUsuario" name="paisUsuario">
-            <option value=0>País de nacimiento</option>
-            <option value=1>Argentina</option>
-            <option value=2>brasil</option>
+            <option value=0>Seleccione un País</option>
+            <?php
+              foreach ($paises as $pais) {?>
+            <option value="<?php echo $pais;?>"><?php echo $pais;?></option>
+            <?php } ?>
           </select>
-
-
+            <span><?php echo $errorPais; ?></span>
 
           <input type="text" placeholder="Nombre de usuario" name="userName" value="<?php echo $userName ?>">
+            <span><?php echo $errorUserName; ?></span>
           <br>
 
 
@@ -69,14 +60,15 @@ $userName = "";
 
             <label class="labelAvatar" for="avatar">Sube tu avatar</label>
             <input type="file" id="avatar" name="foto">
-
+              <span><?php echo $errorImg; ?></span>
           </div>
 
 
-          <input type="password" placeholder="Ingresa tu contraseña" name="password">
+          <input type="password" placeholder="Ingresa tu contraseña" name="contrasena">
+            <span><?php echo $errorContrasena; ?></span>
 
-
-          <input type="password" placeholder="Repite tu contraseña" name="repeatPassword">
+          <input type="password" placeholder="Repite tu contraseña" name="checkContrasena">
+            <span><?php echo $errorCheckContrasena; ?></span>
 
           <button type="submit" name="">Registrate</button>
 
@@ -84,7 +76,7 @@ $userName = "";
         </form>
       </article>
 
-      <article class="user">
+      <article class="etiqueta">
         <p>¿Tienes una cuenta? <a href="inicio.php">Entrar</a></p>
       </article>
 
