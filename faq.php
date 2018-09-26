@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Felicitrip - FAQ</title>
-
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title><?php echo $title; ?></title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Roboto" rel="stylesheet">
+</head>
   <body>
-    <ul>
-      <li><a href="#"></a>Login</li>
-      <li><a href="#"></a>Registrarme</li>
-    </ul>
+
+    <h1>Aca va FAQ</h1>
+
+  <?php include_once("footer.php") ?>
 
   </body>
 </html>
