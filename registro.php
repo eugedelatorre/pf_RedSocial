@@ -1,32 +1,18 @@
 <?php
-include("config.php");
+$title = "Registrate en Felicitrip - para el viajero que hay en vos";
+$mainTitle = "Felicitrip";
+require_once('config.php');
+require_once('head.php');
  ?>
 
+  <body class="site-wrapper">
 
- <!DOCTYPE html>
- <html lang="en" dir="ltr">
-   <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width">
-     <title><?php echo $title; ?></title>
-     <link rel="stylesheet" href="css/styles.css">
-     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Roboto" rel="stylesheet">
-   </head>
-   <body>
+  <?php require_once('header.php'); ?>
 
-
-      <div class="logoTitle">
-        <a class="logoTitle"href="inicio.php">
-          <img src= <?php echo $logo ?> alt="Felicitrip Logo" class="mainLogo">
-          <h1 class="mainTitle"><?php echo $mainTitle ?></h1>
-        </a>
-      </div>
-
-
+  <main>
     <div class="contenedor-principal">
       <article class="info">
         <h2>Conectate con otros viajeros para vivir nuevas experiencias sin fronteras</h2>
-
         <img src="" alt="imagen ciudad">
       </article>
       <article class="formulario">
@@ -46,23 +32,25 @@ include("config.php");
             <option value=0>Seleccione un País</option>
             <?php
               foreach ($paises as $pais) {?>
-            <option value="<?php echo $pais;?>"><?php echo $pais;?></option>
+                <option
+                  value="<?php echo $pais;?>"
+                  <?php echo ($paisElegido == $pais) ? "selected" : ""?>
+                >
+                    <?php echo $pais;?>
+                </option>
             <?php } ?>
           </select>
             <span><?php echo $errorPais; ?></span>
 
           <input type="text" placeholder="Nombre de usuario" name="userName" value="<?php echo $userName ?>">
             <span><?php echo $errorUserName; ?></span>
-          <br>
-
+            <br>
 
           <div class="upload">
-
             <label class="labelAvatar" for="avatar">Sube tu avatar</label>
             <input type="file" id="avatar" name="foto">
               <span><?php echo $errorImg; ?></span>
           </div>
-
 
           <input type="password" placeholder="Ingresa tu contraseña" name="contrasena">
             <span><?php echo $errorContrasena; ?></span>
@@ -71,23 +59,18 @@ include("config.php");
             <span><?php echo $errorCheckContrasena; ?></span>
 
           <button type="submit" name="">Registrate</button>
-
-
         </form>
       </article>
 
       <article class="etiqueta">
-        <p>¿Tienes una cuenta? <a href="inicio.php">Entrar</a></p>
+        <p>¿Tienes una cuenta? <a href="login.php">Entrar</a></p>
       </article>
-
-
-
 
     </div>
 
+    <?php include_once("footer.php") ?>
 
-<?php include_once("footer.php") ?>
 
-
-   </body>
+  </main>
+  </body>
  </html>

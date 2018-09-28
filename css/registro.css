@@ -1,18 +1,3 @@
-.logoTitle{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logoTitle a{
-  text-decoration: none;
-  color: #000;
-}
-
-.mainLogo{
-  width: 50px;
-}
-
 .contenedor-principal{
   display: flex;
   flex-direction: column;

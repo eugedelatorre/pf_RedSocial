@@ -2,15 +2,26 @@
 	box-sizing: border-box;
 }
 
+
+
+
+.site-wrapper{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  min-height: 100vh;
+}
+
+
 body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	font-family: 'Roboto', sans-serif;
-	background-color: rgb(177, 221, 237);
+	background-color: #ebeead;
 	margin: auto;
-	padding: 1%;
 }
 
 h1{
 	font-family: 'Bad Script', cursive;
-	margin-top: 5px;
-	margin-bottom: 5px;
 }

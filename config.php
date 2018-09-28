@@ -20,6 +20,7 @@ $apellido = "";
 $email = "";
 $paises = ["Argentina", "Brasil", "Bolivia", "Colombia", "Chile", "Peru"];
 $userName = "";
+$paisElegido = "";
 
 //****************************************************************
 //******************IF $_POST RECIBE DATOS O NO*******************
@@ -35,6 +36,7 @@ if($_POST){
   $userName = trim($_POST['userName']);
   $contrasena = trim($_POST['contrasena']);
   $checkcontrasena = trim($_POST['checkContrasena']);
+  $paisElegido = $_POST['paisUsuario'];
 
   //****************ERRORES Nombre***********************
   if(empty($nombre)){
@@ -83,23 +85,31 @@ if($_POST){
     $errorCheckContrasena = "Las contraseñas no coinciden.";
   }
 
-    // if(empty($errorNombre) && empty($errorApellido) && empty($errorEmail) &&  empty($errorUserName) && empty($errorPais)){
-    //   var_dump($_FILES['foto']);
-    //   if($_FILES['foto']['error'] == UPLOAD_ERR_OK){
-    //     $desde = $_FILES['foto']['tmp_name'];
-    //     $archivo = $_POST['userName'];
-    //     $ext = pathinfo($_FILES['foto']['name'],PATHINFO_EXTENSION);
-    //     if($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png'){
-    //       $hasta =  dirname(__FILE__)."/images/" . $archivo . "." . $ext;
-    //       move_uploaded_file($desde,$hasta);
-    //     }else{
-    //       $errorImg = "Formato no valido";
-    //     }
-    //   }else{
-    //     $errorImg = "La foto tuvo un error";
-    //   }
-      // header('location:inicio.php');
-    //}
+    if(
+      empty($errorNombre) &&
+      empty($errorApellido) &&
+      empty($errorEmail) &&
+      empty($errorUserName) &&
+      empty($errorPais) &&
+      empty($errorContrasena) &&
+      empty($errorCheckContrasena)
+    ){
+      //var_dump($_FILES['foto']); exit;
+      if($_FILES['foto']['error'] == UPLOAD_ERR_OK){
+        $desde = $_FILES['foto']['tmp_name'];
+        $archivo = $_POST['userName'];
+        $ext = pathinfo($_FILES['foto']['name'],PATHINFO_EXTENSION);
+        if($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png'){
+          $hasta =  dirname(__FILE__)."/images/avatars/" . $archivo . "." . $ext;
+          move_uploaded_file($desde, $hasta);
+          header('location:inicio.php');
+        }else{
+          $errorImg = "Formato no valido";
+        }
+      }else{
+        $errorImg = "La foto tuvo un error";
+      }
+    }
 
 
 

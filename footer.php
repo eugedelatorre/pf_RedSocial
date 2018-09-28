@@ -1,49 +1,38 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title><?php echo $title; ?></title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Roboto" rel="stylesheet">
-</head>
-  <body>
+<footer class="footer">
 
-  <div class="footer">
-    <div class="column1">
+    <div class="footer-column1">
 
-  <div class="row1">
-    <img src="images/quienessomos.png">
-      <label>Quienes somos</label>
+      <div class="footer-row1">
+        <img class="footer-img"src="images/quienessomos.png">
+        <span>Quienes somos</span>
       </div>
-  <div class="row1">
-    <img src="images/faq.png">
-      <label> <a href="faq.php">Preguntas frecuentes</a></label>
-    </div>
-  </div>
-
-  <div class="column2">
-
-    <h1>Contactanos</h1>
-
-    <div class="row2">
-    <img src="images/adress.png">
-    <label>Lima 1111,
-       Capital Federal</label>
-    </div>
-
-    <div class="row2">
-    <img src="images/phone.png">
-    <label>011 53543131</label>
+      <div class="footer-row2">
+        <img class="footer-img"src="images/faq.png">
+        <span> <a href="faq.php">Preguntas frecuentes</a></span>
       </div>
 
-      <div class="row2">
-      <img src="images/email.png">
-      <label>info@felicitrip.com</label>
-       </div>
+    </div>
 
-  </div>
-  </div>
+    <div class="footer-column2">
 
-  </body>
-</html>
+      <p>Contactanos</p>
+
+      <div class="footer-row1">
+        <img class="footer-img"src="images/adress.png">
+        <span>Lima 1111, Capital Federal</span>
+      </div>
+
+      <div class="footer-row2">
+        <img class="footer-img"src="images/phone.png">
+        <span>011 53543131</span>
+      </div>
+
+      <div class="footer-row3">
+        <img class="footer-img"src="images/email.png">
+        <span>info@felicitrip.com</span>
+      </div>
+
+    </div>
+
+
+</footer>
