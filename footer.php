@@ -29,7 +29,7 @@
 
       <div class="footer-row3">
         <img class="footer-img"src="images/email.png">
-        <span>info@felicitrip.com</span>
+        <span><a href="mailto:info@felicitrip.com">info@felicitrip.com</a></span>
       </div>
 
     </div>

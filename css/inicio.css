@@ -1,0 +1,59 @@
+
+.main-ini{
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-image: url(../images/ini.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 10px;
+  height: 500px;
+  vertical-align: center;
+
+
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 60%;
+  align-self: center;
+  z-index: 0;
+
+}
+.ini-h3 {
+display: flex;
+flex-flow: wrap;
+  background-color: none;
+  position: relative;
+  vertical-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+h3 {
+  color: yellow;
+  font-size: 40px;
+}
+
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ini-button {
+  background-color: white;
+  border: 20px;
+  font-size: 30px;
+  border-radius: 20%;
+  border-color: yellow;
+  color: black;
+  padding: 4px;
+}
