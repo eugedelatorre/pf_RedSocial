@@ -31,8 +31,7 @@
 .formulario, .etiqueta{
   margin: 4px;
   width: 70%;
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f6e29a;
   padding: 5px;
 }
 
@@ -49,13 +48,13 @@ input, .paisUsuario, .labelAvatar {
     padding: 5px 5px;
     margin: 2px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #b1b1b1;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 .paisUsuario, .labelAvatar{
-  background-color: rgb(196, 229, 235);
+  background-color: rgba(237, 197, 26, 0.33);
 }
 
 
@@ -75,7 +74,7 @@ input, .paisUsuario, .labelAvatar {
 
 button[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #f19710;
     color: white;
     padding: 8px 15px;
     margin: 8px 0;
@@ -85,7 +84,7 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #fa6f3c;
 }
 
 span {

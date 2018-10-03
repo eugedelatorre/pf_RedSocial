@@ -102,7 +102,7 @@ if($_POST){
         if($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png'){
           $hasta =  dirname(__FILE__)."/images/avatars/" . $archivo . "." . $ext;
           move_uploaded_file($desde, $hasta);
-          header('location:inicio.php');
+          header('location:perfil.php');
         }else{
           $errorImg = "Formato no valido";
         }

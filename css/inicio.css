@@ -1,51 +1,50 @@
 
 .main-ini{
   display: flex;
-  align-self: flex-end;
-  justify-content: space-around;
-  align-items: center;
+  border: 5px solid #fff;
+  justify-content: space-between;
   width: 100%;
   background-image: url(../images/ini.jpg);
   background-position: center;
   background-size: cover;
-  color: white;
-  padding: 10px;
-  height: 500px;
-  vertical-align: center;
-
-
+  padding: 5px;
 }
+
 .col-1 {
   display: flex;
   flex-direction: column;
-
-  height: 100%;
-  width: 60%;
-  align-self: center;
-  z-index: 0;
-
+  width: 50%;
 }
-.ini-h3 {
-display: flex;
-flex-flow: wrap;
-  background-color: none;
-  position: relative;
-  vertical-align: center;
-  position: relative;
-  justify-content: center;
-  align-items: center;
 
+.ini-h3{
+  display: flex;
+  padding: 5px;
+  color: #000;
 }
-h3 {
-  color: yellow;
-  font-size: 40px;
+
+.ini-h3 li{
+  list-style: none;
+  margin: 5px;
+}
+
+
+.special{
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+}
+
+.ini-h3 p{
+  margin: auto;
 }
 
 
 .col-2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
 }
 
 .ini-button {

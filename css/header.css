@@ -2,6 +2,9 @@ header {
   display: flex;
   justify-content: center;
   margin: 10px auto;
+  background-color: #f6e29a;
+  border: 5px solid #fff;
+  width: 100%;
 }
 
 .header-content{

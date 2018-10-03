@@ -4,7 +4,7 @@ $mainTitle = "Felicitrip";
 require_once('head.php');
  ?>
  <body class="site-wrapper">
-  <main>
+  <main class="site-wrapper">
 
    <?php require_once('header.php'); ?>
 
