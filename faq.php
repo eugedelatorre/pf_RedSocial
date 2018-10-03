@@ -43,9 +43,9 @@ require_once('head.php');
           <br><br>
            <summary>
              <section class="Registrarse">
-               <div class="col-2">
-                 <a href="login.php"><button type="button" name="button">LogIn</button></a>
-                 <a href="inicio.php"><button type="button" name="button">Registrate</button></a>
+               <div class="logreg">
+                 <p><a href="login.php">LogIn</a></p>
+                 <p><a href="index.php">Registrate</a></p>
                </div>
              </section>
            </summary>

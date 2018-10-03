@@ -4,7 +4,7 @@
 
       <div class="footer-row1">
         <img class="footer-img"src="images/quienessomos.png">
-        <span>Quienes somos</span>
+        <span><a href="#">Quienes somos</a></span>
       </div>
       <div class="footer-row2">
         <img class="footer-img"src="images/faq.png">
