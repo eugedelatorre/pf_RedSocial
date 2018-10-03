@@ -3,16 +3,14 @@ $title = "Preguntas Frecuentes - Felicitrip - para el viajero que hay en vos";
 $mainTitle = "Felicitrip";
 require_once('head.php');
  ?>
- <body class="site-wrapper">
-  <main class="site-wrapper">
-
+ <body>
    <?php require_once('header.php'); ?>
 
-   <div class="contenedor-box">
+   <div>
      <header class="a-box">
      <div style="color:#FFFFFF;">
 
-       <h1>Preguntas Frecuentes</h1>
+       <h3 class="maintitle">Preguntas Frecuentes</h3>
 
      </div>
      </header>
@@ -45,9 +43,9 @@ require_once('head.php');
           <br><br>
            <summary>
              <section class="Registrarse">
-               <div class="col-2">
-                 <a href="login.php"><button class="ini-button" type="button" name="button">LogIn</button></a>
-                 <a href="registro.php"><button class="ini-button" type="button" name="button">Registrate</button></a>
+               <div class="logreg">
+                 <p><a href="login.php">LogIn</a></p>
+                 <p><a href="inicio.php">Registrate</a></p>
                </div>
              </section>
            </summary>
@@ -57,6 +55,6 @@ require_once('head.php');
 
   <?php require_once("footer.php") ?>
 
-  </main>
+
   </body>
 </html>

@@ -43,7 +43,7 @@
   font-size: 10px;
 }
 
-input, .paisUsuario, .labelAvatar {
+input, .paisUsuario, .labelAvatar{
     width: 100%;
     padding: 5px 5px;
     margin: 2px 0;
@@ -90,4 +90,22 @@ button[type=submit]:hover {
 span {
   color:red;
   font-size: 10px;
+}
+
+
+.logreg{
+  display: flex;
+  margin: 5px;
+}
+
+.logreg a{
+  margin: 5px;
+}
+
+.maintitle{
+  color: #000;
+}
+
+.c-box{
+  padding: 5px;
 }

@@ -20,7 +20,7 @@ if($_POST){
     $errorContrasena = "La contraseña debe tener 6 caracteres minimo.";
     }
   if(empty($errorEmail) && empty($errorContrasena)){
-    header('location:inicio.php');
+    header('location:perfil.php');
   }
 }
 
@@ -48,7 +48,7 @@ require_once ('head.php');
             </form>
           </article>
           <article class="etiqueta">
-            <p>¿Nuev@ viajer@? <a href="inicio.php">Registrate</a></p>
+            <p>¿Nuev@ viajer@? <a href="index.php">Registrate</a></p>
           </article>
         </div>
         <div class="col-2">

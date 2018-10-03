@@ -46,13 +46,3 @@
   justify-content: center;
   width: 50%;
 }
-
-.ini-button {
-  background-color: white;
-  border: 20px;
-  font-size: 30px;
-  border-radius: 20%;
-  border-color: yellow;
-  color: black;
-  padding: 4px;
-}
