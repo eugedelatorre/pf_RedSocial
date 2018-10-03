@@ -45,7 +45,7 @@ require_once('head.php');
              <section class="Registrarse">
                <div class="logreg">
                  <p><a href="login.php">LogIn</a></p>
-                 <p><a href="inicio.php">Registrate</a></p>
+                 <p><a href="index.php">Registrate</a></p>
                </div>
              </section>
            </summary>
